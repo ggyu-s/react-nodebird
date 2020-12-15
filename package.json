@@ -1,0 +1,21 @@
+{
+  "name": "react-nodebird",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ggyu",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons": "^4.3.0",
+    "antd": "^4.9.3",
+    "next": "^9.5.5",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1"
+  }
+}
