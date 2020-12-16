@@ -1,14 +1,28 @@
 import React from "react";
 import AppLayout from "../components/AppLayout";
 import Head from "next/head";
+import NicknameEditForm from "../components/NicknameEditForm";
+import FollowList from "../components/FollowList";
 function profile() {
+  const followerList = [
+    { nickname: "제로초" },
+    { nickname: "바보" },
+    { nickname: "노드버드오피셜" },
+  ];
+  const followingList = [
+    { nickname: "제로초" },
+    { nickname: "바보" },
+    { nickname: "노드버드오피셜" },
+  ];
   return (
     <>
       <Head>
         <title>프로필</title>
       </Head>
       <AppLayout>
-        <div>프로플 페이지입니다.</div>
+        <NicknameEditForm />
+        <FollowList header="팔로잉 목록" data={followingList} />
+        <FollowList header="팔로워 목록" data={followerList} />
       </AppLayout>
     </>
   );
