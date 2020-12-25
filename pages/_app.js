@@ -4,6 +4,7 @@ import "antd/dist/antd.css";
 // import Head from 'next/head' // HTML에서 head 부분을 바꿀 때
 import PropTypes from "prop-types";
 import wrapper from "../store/configureStore";
+import withReduxSaga from "next-redux-saga";
 
 // next-redux 는 Provider 자동으로 감싸준다.
 const NodeBird = ({ Component }) => {
@@ -12,4 +13,4 @@ const NodeBird = ({ Component }) => {
 NodeBird.propTypes = {
   Component: PropTypes.elementType.isRequired,
 };
-export default wrapper.withRedux(NodeBird);
+export default wrapper.withRedux(withReduxSaga(NodeBird));
