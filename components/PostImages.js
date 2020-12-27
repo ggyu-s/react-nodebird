@@ -17,7 +17,7 @@ const PostImages = ({ images }) => {
       <>
         <img
           style={{
-            maxHeight: "200px",
+            maxHeight: "500px",
           }}
           role="presentation"
           src={images[0].src}
